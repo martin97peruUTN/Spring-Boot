@@ -1,14 +1,15 @@
 package com.mitocode.service;
 
 import com.mitocode.repository.IPersonaRepo;
-import com.mitocode.repository.PersonaRepoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
 public class PersonaServiceImpl implements IPersonaService{
 
     @Autowired
+    @Qualifier("persona2")
     private IPersonaRepo repo;
 
     @Override
