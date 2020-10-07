@@ -5,6 +5,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="'Hello, ' + ${nombrecito} + '!'" />
+    <p th:text="'Hello, ' + ${nombrecito} + '!'" />
+    <table>
+        <th:block th:each="per: ${personas}">
+            <tr>
+                <td th:text="${per.getIdPersona()}"></td>
+                <td th:text="${per.getNombre()}"></td>
+                <!--<td th:text="${per.idPersona}"></td>
+                <td th:text="${per.nombre}"></td> asi lo hace el vago-->
+            </tr>
+        </th:block>
+    </table>
 </body>
 </html>

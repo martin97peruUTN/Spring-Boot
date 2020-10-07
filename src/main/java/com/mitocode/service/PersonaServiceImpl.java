@@ -1,6 +1,6 @@
 package com.mitocode.service;
 
-import com.mitocode.repository.IPersonaRepo;
+import com.mitocode.repository.IPersonaRepoViejo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ public class PersonaServiceImpl implements IPersonaService{
 
     @Autowired
     @Qualifier("persona2")
-    private IPersonaRepo repo;
+    private IPersonaRepoViejo repo;
 
     @Override
     public void registrar(String nombre) {

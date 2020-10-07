@@ -1,5 +1,5 @@
 package com.mitocode.repository;
 
-public interface IPersonaRepo {
+public interface IPersonaRepoViejo {
     void registrar(String nombre);
 }

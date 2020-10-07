@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Qualifier("persona1")
-public class PersonaRepoImpl1 implements IPersonaRepo {
+public class PersonaRepoImpl1 implements IPersonaRepoViejo {
 
     private static Logger LOG = LoggerFactory.getLogger(Application.class);
 
