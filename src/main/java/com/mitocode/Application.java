@@ -26,3 +26,6 @@ public class Application implements CommandLineRunner {
         service.registrar("Peru");
     }
 }
+
+//Clase 11
+//https://stackoverflow.com/questions/15576064/the-local-psql-command-could-not-be-located
